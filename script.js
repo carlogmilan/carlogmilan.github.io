@@ -1,9 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
     const images = [
-        'car.jpg', // Add all your image names here
-        // 'image2.jpg',
-        // 'image3.jpg'
-        // Add more images as needed
+        'TotoroPrint_resized.jpg', // Add all your image names here
+         'PonyoPrint_resized.jpg',
+         'Konoha_resize.jpg',
+         'ReadingPicassoCutPaper.png',
+         'PXL_20240104_220639123.jpg',
+         'IMG_4743.jpg',
+         'Myth_Beachhouse.jpg',
+         'GraveSalon.jpg',
+         'Mac miller background.png',
+         'Page1-4.png',
+         'Picture2-3.png',
     ];
 
     const gallery = document.getElementById('gallery');
