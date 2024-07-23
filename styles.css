@@ -45,26 +45,26 @@ body {
 }
 
 .button {
-    margin: 0 10px; /* Adjust spacing between buttons */
+    margin: 0 20px; /* Adjust spacing between buttons */
 }
 
 .button img {
-    width: 125px; /* Adjust size as necessary */
+    width: 100px; /* Adjust size as necessary */
     height: auto;
     transition: transform 0.3s ease;
 }
 
 #about img {
-    transform: translateY(8px); /* Slightly lower */
+    transform: translateY(-8px); /* Slightly lower */
 }
 
 #exit img {
-    transform: translateY(2px); /* Higher */
-    width: 400px;
+    transform: translateY(-12px); /* Higher */
+    width: 325px;
 }
 
 #gallery_btn img {
-    transform: translateY(8px); /* Slightly lower */
+    transform: translateY(-8px); /* Slightly lower */
 }
 
 #static img {
@@ -96,7 +96,7 @@ a {
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    width: 1000px;
+    width: 900px;
 }
 
 .gallery-image {
