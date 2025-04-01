@@ -1,8 +1,16 @@
-body {
+html, body {
     margin: 0;
+    padding: 0;
+    height: 100%;
     font-family: gd-font;
     background: radial-gradient(circle, rgba(102,193,49,1) 0%, rgba(182,208,8,1) 79%, rgba(214,195,0,1) 100%);
+  }
+  
+
+body.full-height {
+  overflow: hidden; /* only lock overflow for full-height pages */
 }
+
 
 @font-face {
     font-family: gd-font;
@@ -10,9 +18,13 @@ body {
 }
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin: 0;
     text-align: center;
-    margin-top: 100px;
-}
+  }
 
 .splatter-container {
     position: relative;
@@ -37,7 +49,7 @@ body {
 .buttons {
     position: absolute;
     top: 55%; /* Adjust this value to move the buttons up or down */
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, 0);
     display: flex;
     justify-content: center;
@@ -49,18 +61,12 @@ body {
 }
 
 .button img {
-    width: 100px; /* Adjust size as necessary */
+    width: 160px; /* Bigger for desktop */
     height: auto;
-    transition: transform 0.3s ease;
-}
+  }
 
 #about img {
     transform: translateY(-8px); /* Slightly lower */
-}
-
-#exit img {
-    transform: translateY(-12px); /* Higher */
-    width: 325px;
 }
 
 #gallery_btn img {
@@ -68,7 +74,7 @@ body {
 }
 
 #static img {
-    transform: translateX(-40px); /* Slightly left */
+    transform: translateX(-50px); /* Slightly left */
     transform: translateY(-10px);
     width: 475px;
 }
@@ -92,18 +98,78 @@ a {
 }
 
 .gallery {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    width: 900px;
-}
-
-.gallery-image {
-    margin: 10px;
-    max-width: auto;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .gallery-image {
+    width: 100%;
     height: auto;
+    margin: 12px 0;
     border: 4px solid #EA0393;
     border-radius: 10px;
-}
+    object-fit: contain;
+  }
 
+@media (max-width: 768px) {
+  
+    .splatter-image {
+      width: 100%;
+      max-width: 800px;
+    }
+  
+    .splatter-text {
+      width: 60%;
+      max-width: 400px;
+      top: 44%; /* ↓ moved text down */
+    }
+  
+    .buttons {
+        top: 57%;
+        left: 50%;
+        transform: translateX(-55%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 15px; /* Space between buttons */
+        width: auto;
+        padding: 0;
+      }
+      
+      .button {
+        margin: 0; /* 🔥 This is the real fix for the persistent gap */
+      }
+      
+      .button img {
+        width: 65px;
+        height: auto;
+        display: block;
+      }
+
+    #static img {
+        width: 180px;
+        height: auto;
+        margin-top: -3px;  
+      }
+
+    .gallery {
+        padding: 0 10px;
+        margin-top: -150px;
+    }
+
+    .gallery-image {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    
+  }
+  
+  
