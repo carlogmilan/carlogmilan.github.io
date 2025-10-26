@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
          'Page1-4.png',
          'Picture2-3.png',
 	 'SightseeStampDesignFR2-14.png',
+	 'SightseeStampDesignFR-13.png',
     ];
 
     const gallery = document.getElementById('gallery');
