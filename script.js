@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	     'SightseeStampDesignFR2-14.png',
 	     'SightseeStampDesignFR-13.png',
          'DnMSept7.png'
+         'MaceysLogoSpread.png'
     ];
 
     const gallery = document.getElementById('gallery');
