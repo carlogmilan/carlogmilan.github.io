@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
          'DnMSept7.png',
          'MaceysLogoSpread.png',
          'FinalSpreadESDonRomeo.png',
+         'Cmilan_Project3.png',
     ];
 
     const gallery = document.getElementById('gallery');
