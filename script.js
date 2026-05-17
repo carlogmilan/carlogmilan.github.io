@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", function() {
          'DnMSept7.png',
          'MaceysLogoSpread.png',
          'FinalSpreadESDonRomeo.png',
-         'Cmilan_Project3.png'
+         'Cmilan_Project3.png',
          'DnMMay2.5.png',
          'FlyingKiwiCreative_MasterFile_updated.png',
-         'GreentechRenewablesMockUp.png'
-         'Holidaystamp.png'
-         'SightseeDJSesh1-Textture.png'
+         'GreentechRenewablesMockUp.png',
+         'Holidaystamp.png',
+         'SightseeDJSesh1-Textture.png',
     ];
 
     const gallery = document.getElementById('gallery');
